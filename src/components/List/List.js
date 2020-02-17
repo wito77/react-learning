@@ -22,7 +22,7 @@ class List extends React.Component {
         <div className={styles.description}>
           {this.props.children}
         </div>
-        <div className={styles.column}>
+        <div className={styles.columns}>
           <Column columnTitle='Animals' />
           <Column columnTitle='Plants' />
           <Column columnTitle='Minerals' />
