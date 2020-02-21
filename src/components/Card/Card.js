@@ -2,14 +2,20 @@ import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
-const Card = props => (
-  <section className={styles.component}>
-    <h3 className={styles.title}>{props.title}</h3>
-  </section>
-);
+class Card extends React.Component {
 
-Card.propTypes = {
-  title: PropTypes.node,
-};
+  static propTypes = {
+    title: PropTypes.node,
+  }
+
+  render() {
+    const { title } = this.props;
+    return (
+      <section className={styles.component}>
+        <h3 className={styles.title}>{title}</h3>
+      </section>
+    );
+  }
+}
 
 export default Card;
