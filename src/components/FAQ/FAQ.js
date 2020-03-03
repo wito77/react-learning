@@ -8,6 +8,7 @@ const FAQ = props => (
   <Container>
     <Hero titleText={props.title} image={props.image} />
     <p>{props.description}</p>
+    <img src={props.image} />
   </Container>
 );
 
