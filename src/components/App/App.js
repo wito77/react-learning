@@ -8,7 +8,7 @@ import { AnimatedSwitch } from 'react-router-transition';
 import styles from './App.scss';
 import List from '../List/ListContainer.js';
 import Container from '../Container/Container.js';
-import SearchResults from '../Search/SearchResults.js';
+import SearchResults from '../Search/SearchResultsContainer';
 
 const App = () => (
   <BrowserRouter>

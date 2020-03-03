@@ -6,9 +6,8 @@ import Hero from '../Hero/Hero.js';
 
 const FAQ = props => (
   <Container>
-    <Hero titleText={props.title} image={props.image} />
+    <Hero titleText={props.title} spaceImage={props.image} />
     <p>{props.description}</p>
-    <img src={props.image} />
   </Container>
 );
 

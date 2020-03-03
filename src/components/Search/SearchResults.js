@@ -1,5 +1,5 @@
 import React from 'react';
-// import styles from './Column.scss';
+import styles from './SearchResults.scss';
 import PropTypes from 'prop-types';
 import Card from '../Card/Card.js';
 import Container from '../Container/Container.js';
@@ -14,7 +14,7 @@ class SearchResults extends React.Component {
     const { cards } = this.props;
     return (
       <Container>
-        <section>
+        <section className={styles.component}>
           <div>
             {cards.map(cardData => (
               <Card key={cardData.id} {...cardData} />
